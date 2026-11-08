@@ -14,9 +14,9 @@ export default function SiteHeader({ install = false }) {
         </a>
         <div className="nav-links">
           <a href={home + '#how-it-works'}>How it works</a>
+          <a href={home + '#activity-wheel'}>Activity wheel</a>
           <a href={home + '#questions'}>Questions</a>
           <a href="/install/" aria-current={install ? 'page' : undefined}>Installation help</a>
-          <a href="https://github.com/marandicimihai/timer-app">GitHub</a>
         </div>
         <a className="button small" href={downloadUrl}>
           Download for Mac <span aria-hidden="true">↓</span>

@@ -5,7 +5,7 @@ const title = 'Minimal Timer — Time tracking for your Mac'
 
 export const metadata = {
   title,
-  description: 'Track everyday activities from your Mac menu bar, review daily totals, and work toward weekly goals. Free, with no account required.',
+  description: 'Track time from your Mac menu bar, start recent activities with the activity wheel, and review daily totals. Free, with no account required.',
   openGraph: {
     type: 'website',
     title,
@@ -24,7 +24,7 @@ export default function HomePage() {
             <div>
               <p className="eyebrow"><span className="dot"></span> A timer in your menu bar</p>
               <h1>Time tracking<br className="desktop-break" /> for your Mac<span className="accent">.</span></h1>
-              <p className="lead">See where your time goes. Track everyday activities from your menu bar, review your daily totals, and work toward weekly goals.</p>
+              <p className="lead">Track everyday activities, review daily totals, and work toward weekly goals. <strong>Your activity history stays on your Mac.</strong></p>
               <div className="actions">
                 <a className="button" href={downloadUrl}>Download for Mac <span aria-hidden="true">↓</span></a>
                 <a className="secondary" href="#how-it-works">See how it works <span aria-hidden="true">↘</span></a>
@@ -56,6 +56,24 @@ export default function HomePage() {
                 <path className="clock-hand" d="M180 90v40l28 22" stroke="currentColor" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round" />
                 <circle cx="180" cy="130" r="6" fill="currentColor" />
               </svg>
+            </div>
+          </div>
+        </section>
+        <section id="activity-wheel" className="section wheel-section" aria-labelledby="wheel-heading">
+          <div className="wrap split">
+            <div>
+              <p className="eyebrow">Activity wheel</p>
+              <h2 id="wheel-heading">Start a timer from anywhere.</h2>
+              <p className="lead">Hold <kbd>Option</kbd> + <kbd>T</kbd> to open the wheel at your pointer. Move toward a recent activity and release <kbd>T</kbd> to start its timer.</p>
+              <p className="wheel-stop">To finish, open the wheel again and select <strong>Stop</strong> at the top.</p>
+            </div>
+            <div className="wheel-screens">
+              <a className="screenshot-link" href="/assets/app/wheel-start.png">
+                <img src="/assets/app/wheel-start.png" width="984" height="984" loading="lazy" decoding="async" alt="Activity wheel with four recent activities and Design highlighted." />
+              </a>
+              <a className="screenshot-link" href="/assets/app/wheel-stop.png">
+                <img src="/assets/app/wheel-stop.png" width="984" height="984" loading="lazy" decoding="async" alt="Activity wheel with the Stop slice highlighted above the running Writing activity." />
+              </a>
             </div>
           </div>
         </section>
@@ -113,6 +131,7 @@ export default function HomePage() {
             <div className="faq">
               <details data-reveal=""><summary>Is Minimal Timer free?</summary><p>Yes. It’s free to download and use, and there’s no account or subscription.</p></details>
               <details data-reveal=""><summary>Where is my activity history stored?</summary><p>Your activity history is stored locally on your Mac.</p></details>
+              <details data-reveal=""><summary>Can I customize Minimal Timer?</summary><p>The source code is available on GitHub. You can edit it and build your own version using the <a href="https://github.com/marandicimihai/timer-app#build-a-release-locally">local build instructions</a>.</p></details>
               <details data-reveal=""><summary>Does it track time automatically?</summary><p>You decide what to track. Start an activity when you begin and finish it to save the session.</p></details>
               <details data-reveal=""><summary>Why might macOS ask me to approve the app?</summary><p>The current release is ad-hoc signed and hasn’t been notarized by Apple. If macOS blocks the first launch, follow the <a href="/install/">installation guide</a>.</p></details>
             </div>

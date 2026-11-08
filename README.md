@@ -5,6 +5,7 @@ This project is the website for [Minimal Timer](https://github.com/marandicimiha
 ## The app
 
 - Start a named activity and see its elapsed time from the menu bar. Finish it to record the session.
+- Hold Option–T to open the activity wheel and start a recent activity or finish the running timer.
 - Run configurable Pomodoro focus and break timers with optional completion notifications.
 - Review completed activities and daily totals, and set weekly time goals for individual activities.
 - Manage activities by assigning colors, archiving them, or deleting them with their history.
@@ -29,7 +30,7 @@ The site uses the Next.js App Router. Run `npm run build` to export both pages a
 
 ## Product images
 
-The homepage's app images are 3× offscreen renders of the native SwiftUI views at tag [v1.9.5](https://github.com/marandicimihai/timer-app/tree/v1.9.5). They use sample activities from an in-memory store. The installed app’s activity history and settings are separate from the render.
+The activity wheel screenshots are 6× offscreen renders of the native SwiftUI wheel from [v1.10.0](https://github.com/marandicimihai/timer-app/releases/tag/v1.10.0), with sample activities and separate start and stop states. The other homepage app images are 3× offscreen renders of the native SwiftUI views at tag [v1.9.5](https://github.com/marandicimihai/timer-app/tree/v1.9.5), using sample activities from an in-memory store. The installed app’s activity history and settings are separate from the captures.
 
 ## Before publishing
 - Replace the walkthrough illustration with a native `video` element using `controls`, `playsinline`, `preload="none"`, a local poster, and an MP4 source. Keep the written steps beside it and label the hero link **Watch the app** once the video is available.
